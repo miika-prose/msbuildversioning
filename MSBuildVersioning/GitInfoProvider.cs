@@ -98,7 +98,7 @@ namespace MSBuildVersioning
         {
             if (tags == null)
             {
-                tags = ExecuteCommand(ExecutableName, "describe")[0];
+                tags = ExecuteCommand(ExecutableName, "describe --always")[0];
             }
             return tags;
         }
